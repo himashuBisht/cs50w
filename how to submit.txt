@@ -1,0 +1,4 @@
+open cmd
+cd /D D:\cs50\cs50w
+git init
+git checkout -b web50/projects/2020//x/ -->check documentation
