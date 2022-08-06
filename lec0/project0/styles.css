@@ -4,8 +4,6 @@
     text-align: center;
     margin-top: 100px;
     margin-bottom: 40px;
-    /* border: 1px solid black; */
-    /* margin:auto; */
 }
 
 form {
@@ -96,7 +94,7 @@ input:focus {
 .grid-container {
     display: inline-grid;
     border: black 1px solid;
-    width:900px
+    width: 900px
 }
 
 /* body{
