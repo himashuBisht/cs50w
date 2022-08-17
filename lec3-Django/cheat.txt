@@ -1,0 +1,13 @@
+#create project
+django-admin startproject <project name>
+django-admin startproject lec3
+
+
+#to run project
+python manage.py runserver
+
+##to start app
+python manage.py startapp <app name>
+python manage.py startapp hello
+
+
