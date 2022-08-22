@@ -10,4 +10,5 @@ python manage.py runserver
 python manage.py startapp <app name>
 python manage.py startapp hello
 
-
+#for default database for django
+python manage.pt migrate
