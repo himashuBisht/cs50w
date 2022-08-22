@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Encyclopedia
+{% endblock %}
+
+{% block body %}
+<h1>All Pages</h1>
+
+<ul>
+    <!-- <p>JSON response from server: </p>
+    <p>{{post_input}}</p> -->
+    {% for entry in matches %}
+    <li><a href="wiki/{{entry}}">{{ entry }}</a></li>
+    {%empty%}
+    <h6 style="color:darkgray; font-style:oblique">No content available for {{input}} </h6>
+    {% endfor %}
+</ul>
+
+{% endblock %}

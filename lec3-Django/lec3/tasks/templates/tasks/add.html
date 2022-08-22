@@ -1,0 +1,21 @@
+{%extends 'tasks/layout.html'%}
+{%block body%}
+<h1>Add heading</h1>
+<p>legacy method</p>
+<form action="{%url 'tasks:add'%}" method="post">
+    {% csrf_token %}
+    <input type="text" ,name='task'>
+    <input type="submit">
+</form>
+
+<p>Form using Django Forms</p>
+<form action="{%url 'tasks:add'%}" method="post">
+    {%csrf_token%}
+    {{form}}
+    <input type="submit">
+</form>
+<!-- this can have name collusion because there are multiple routes with name index -->
+
+<!-- <a href="{% url 'index'%}"> Tasks</a> -->
+<a href="{% url 'tasks:index'%}"> Tasks</a>
+{%endblock%}

@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+wiki|{{entryTitle}}
+{% endblock %}
+
+{% block body %}
+<h1 style="font:bolder; color:blue;">Keep learning</h1>
+{{entry | safe}}
+<form action="{%url 'edit' %}" method="POST">
+    {%csrf_token%}
+    <input type="hidden" name="title" value="{{entryTitle}}">
+    <button type="submit" class="btn btn-outline-dark">Edit</button>
+</form>
+
+
+{% endblock %}
